@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block content %}
+<section id="menu" class="menu">
+        <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="../../static/img/about.jpg" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>About Us</h3>
+            <p class="fst-italic">
+          Welcome to Spoon Restaurant, where flavor meets tradition! Nestled in the heart of Voi Town, we specialize in serving fresh, locally sourced ingredients with a unique twist on classic dishes.
+              <br> Our culinary team brings passion and creativity to every plate, ensuring a delightful dining experience with each visit.
+              <br>Come taste the difference and make memories at Spoon Restaurant!
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Quality & Freshness
+We are dedicated to using the finest, locally sourced ingredients to ensure each dish is as fresh and flavorful as possible, delivering a dining experience you can trust..</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Exceptional Service
+At Spoon Restaurant, we believe in going above and beyond to make every guest feel welcomed and cared for, creating a memorable experience with every visit..</span></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+</section>
+{% endblock %}

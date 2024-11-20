@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Book a Table
+{% endblock %}
+
+{% block content %}
+
+<section id="book-a-table" class="book-a-table section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>RESERVATION</h2>
+        <p>Book a Table</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <form method="post" role="form" class="php-email-form">
+            {% csrf_token %}
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    {{ form.name }}
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    {{ form.email }}
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    {{ form.phone }}
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    {{ form.date }}
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    {{ form.time }}
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    {{ form.people }}
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                {{ form.message }}
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Book a Table</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

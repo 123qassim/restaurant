@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<section id="menu" class="menu">
+    <div class="container">
+        <h2>Menu</h2>
+        <p>Check Our Tasty Menu</p>
+        <!-- Add menu items -->
+    </div>
+        <!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Specials</h2>
+        <p>Check Our Specials</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Chicken with Rice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Fruit Salad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Noodles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Hummus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Fruit Platter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Chicken with Rice</h3>
+                    <p class="fst-italic">Chicken With Rice</p>
+                    <p>This dish features a creamy, savory chicken stew accompanied by a perfectly rounded serving of steamed rice. Garnished with fresh lettuce, cucumber, and a slice of tomato, the plate is completed with a sprinkle of herbs and crispy fried onions on top for added flavor and texture. It’s a visually appealing, well-balanced meal that promises a satisfying and flavorful experience.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../../static/img/specials-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fruit Salad</h3>
+                    <p class="fst-italic">Fruit Salad</p>
+                    <p>A fruit salad is a dish made from a variety of fresh, typically raw, fruits cut into bite-sized pieces and mixed together. It can include a wide range of fruits, such as apples, oranges, bananas, grapes, berries, and melons. Often, fruit salads are enhanced with ingredients like citrus juice, honey, yogurt, or mint for added flavor</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../../static/img/specials-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Noodles</h3>
+                    <p class="fst-italic">Noodles</p>
+                    <p>
+Noodles are a type of unleavened dough, typically made from wheat or rice flour, water, and sometimes eggs. The dough is rolled flat, cut into various shapes, and then boiled or fried. Noodles are a staple in many cuisines around the world, especially in Asian dishes. They can be served in soups, stir-fries, or cold dishes and come in various types, including long strands, ribbons, or small shapes.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../../static/img/specials-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hummus</h3>
+                    <p class="fst-italic">Hummus</p>
+                    <p>Hummus is a creamy dip or spread made primarily from cooked and mashed chickpeas (garbanzo beans), blended with tahini (sesame paste), olive oil, lemon juice, garlic, and salt. It is a staple in Middle Eastern and Mediterranean cuisines and is known for its smooth texture and rich, nutty flavor.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../../static/img/specials-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fruit Platter</h3>
+                    <p class="fst-italic">Fruit Platter.</p>
+                    <p>A fruit platter is an assortment of fresh, sliced fruits arranged aesthetically on a serving tray or platter. It typically includes a variety of fruits, such as berries, melons, grapes, citrus slices, pineapple, and apples, offering a colorful and visually appealing presentation. Fruit platters are often served as a healthy snack, appetizer, or dessert at gatherings, parties, or events.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../../static/img/specials-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Specials Section -->
+
+</section>
+{% endblock %}

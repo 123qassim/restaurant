@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Events
+{% endblock %}
+
+{% block content %}
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <img class="slider-bg" src="../../static/img/chefs/logo.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="../../static/img/chefs/birthdayparty.jpg" class="img-fluid" alt="" >
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh 40,000.00</span></p>
+                  </div>
+                  <p class="fst-italic">
+                  At Spoon Restaurant, we provide exceptional birthday party services designed to make your special day unforgettable. Enjoy a warm ambiance, personalized menus, and attentive service tailored to your celebration needs..
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Customizable Menus: A variety of delicious options for all ages and dietary preferences..</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Festive Decor: Themed decorations to create the perfect party atmosphere..</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Additional Services: Custom cakes, entertainment, and more available upon request.</span></li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="../../static/img/chefs/private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh 100,000.00</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Spoon Restaurant offers premium private party services, ensuring a memorable and seamless experience for any special occasion. From intimate gatherings to larger celebrations, we provide customized menus, elegant decor, and attentive service tailored to your needs.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Tailored Menus: A diverse selection of dishes suited to your taste and dietary needs..</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Elegant Ambiance: Beautifully decorated spaces to enhance your event.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Personalized Service: Dedicated staff to ensure your event runs smoothly from start to finish</span></li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="../../static/img/chefs/custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>Ksh 56,000.00</span></p>
+                  </div>
+                  <p class="fst-italic">
+                   Spoon Restaurant offers custom party services to make any celebration uniquely yours. Our team works closely with you to design a personalized experience, from the menu to the decor, ensuring every detail reflects your vision.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Personalized Menus: Craft a menu that suits your taste, theme, and dietary preferences.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Themed Decor: Customized decorations to match your style and event theme.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Dedicated Event Planning: Support from start to finish to bring your vision to life seamlessly.</span></li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+{% endblock %}
